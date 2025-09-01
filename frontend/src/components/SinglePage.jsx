@@ -352,8 +352,8 @@ const SinglePage = ({ data }) => {
         
         {/* Enhanced 3D Header */}
         <header className="flex items-center justify-between px-8 py-4 relative">
-          {/* 3D Header background effect */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/2 via-transparent to-white/2 backdrop-blur-sm"></div>
+          {/* 3D Header background effect - Enhanced */}
+          <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-white/8 to-white/5 backdrop-blur-sm"></div>
           
           <div 
             className="font-medium text-xl text-white tracking-wide relative z-10 cursor-pointer group"
