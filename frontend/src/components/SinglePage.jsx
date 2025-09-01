@@ -277,8 +277,9 @@ const SinglePage = ({ data }) => {
         ctx.translate(projectedX, projectedY);
         ctx.rotate(particle.rotation);
         ctx.beginPath();
-        ctx.arc(0, 0, projectedSize / 2, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255, 255, 255, ${particle.opacity * 2})`;
+        const coreSize = Math.max(0.5, projectedSize / 2);
+        ctx.arc(0, 0, coreSize, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(255, 255, 255, ${Math.max(0, particle.opacity * 2)})`;
         ctx.fill();
         ctx.restore();
       });
