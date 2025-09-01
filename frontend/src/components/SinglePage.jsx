@@ -259,7 +259,7 @@ const SinglePage = ({ data }) => {
           // Create radial gradient for 3D glow effect
           const gradient = ctx.createRadialGradient(
             projectedX, projectedY, 0,
-            projectedX, projectedY, layerSize + layerOffset
+            projectedX, projectedY, Math.max(1, layerSize + layerOffset)
           );
           gradient.addColorStop(0, `rgba(255, 255, 255, ${layerOpacity})`);
           gradient.addColorStop(0.5, `rgba(255, 255, 255, ${layerOpacity * 0.5})`);
