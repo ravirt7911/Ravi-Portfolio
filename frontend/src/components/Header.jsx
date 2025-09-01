@@ -6,7 +6,7 @@ const Header = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 30);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -28,10 +28,10 @@ const Header = () => {
           : "bg-transparent"
       }`}
     >
-      <div className="max-w-6xl mx-auto px-8 py-6">
+      <div className="max-w-5xl mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div 
-            className="font-light text-2xl cursor-pointer hover:scale-105 transition-all duration-500 transform text-white tracking-wider"
+            className="font-light text-xl cursor-pointer hover:scale-105 transition-all duration-500 transform text-white tracking-wide"
             onClick={() => scrollToSection("hero")}
             style={{
               fontFamily: "'Inter', system-ui, sans-serif",
@@ -41,7 +41,7 @@ const Header = () => {
             Ravi Teeja
           </div>
           
-          <div className="hidden md:flex items-center space-x-12">
+          <div className="hidden md:flex items-center space-x-8">
             <button
               onClick={() => scrollToSection("about")}
               className="text-sm font-light text-white/70 hover:text-white transition-all duration-500 relative group tracking-wide"
@@ -54,7 +54,7 @@ const Header = () => {
 
           <Button
             onClick={() => scrollToSection("contact")}
-            className="bg-white text-black hover:bg-gray-100 transition-all duration-500 hover:scale-105 text-sm font-light tracking-wide px-6 py-2"
+            className="bg-white text-black hover:bg-gray-100 transition-all duration-500 hover:scale-105 text-sm font-light tracking-wide px-5 py-2"
             style={{ fontFamily: "'Inter', system-ui, sans-serif", fontWeight: "300" }}
           >
             Contact
