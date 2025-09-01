@@ -253,13 +253,14 @@ const SinglePage = ({ data }) => {
         // Draw 3D particle with multiple layers
         for (let layer = 2; layer >= 0; layer--) {
           const layerOffset = layer * 2;
-          const layerOpacity = particle.opacity * (1 - layer * 0.3);
-          const layerSize = projectedSize + Math.sin(particle.pulse) * 1 + layer;
+          const layerOpacity = Math.max(0, particle.opacity * (1 - layer * 0.3));
+          const layerSize = Math.max(1, projectedSize + Math.sin(particle.pulse) * 1 + layer);
 
-          // Create radial gradient for 3D glow effect
+          // Create radial gradient for 3D glow effect - ensure positive radius
+          const gradientRadius = Math.max(1, layerSize + layerOffset);
           const gradient = ctx.createRadialGradient(
             projectedX, projectedY, 0,
-            projectedX, projectedY, Math.max(1, layerSize + layerOffset)
+            projectedX, projectedY, gradientRadius
           );
           gradient.addColorStop(0, `rgba(255, 255, 255, ${layerOpacity})`);
           gradient.addColorStop(0.5, `rgba(255, 255, 255, ${layerOpacity * 0.5})`);
