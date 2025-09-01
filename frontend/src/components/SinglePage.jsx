@@ -306,36 +306,40 @@ const SinglePage = ({ data }) => {
         style={{ zIndex: 1 }}
       />
       
-      {/* 3D Floating Elements */}
+      {/* 3D Floating Elements - Enhanced visibility */}
       <div className="absolute inset-0 pointer-events-none" style={{ zIndex: 2 }}>
         {/* 3D Geometric decorations */}
-        <div className="absolute top-20 left-20 w-32 h-32 border border-white/10 rotate-45 animate-pulse" 
+        <div className="absolute top-20 left-20 w-32 h-32 border-2 border-white/25 rotate-45 animate-pulse" 
              style={{ 
                transform: 'rotateX(45deg) rotateY(45deg)',
-               animation: 'float 6s ease-in-out infinite'
+               animation: 'float 6s ease-in-out infinite',
+               boxShadow: '0 0 20px rgba(255, 255, 255, 0.1)'
              }}></div>
-        <div className="absolute bottom-20 right-20 w-24 h-24 border border-white/10 rounded-full" 
+        <div className="absolute bottom-20 right-20 w-24 h-24 border-2 border-white/25 rounded-full" 
              style={{ 
                transform: 'rotateX(60deg) rotateZ(45deg)',
-               animation: 'rotate3d 12s linear infinite'
+               animation: 'rotate3d 12s linear infinite',
+               boxShadow: '0 0 15px rgba(255, 255, 255, 0.1)'
              }}></div>
-        <div className="absolute top-1/2 right-10 w-16 h-16 border border-white/10"
+        <div className="absolute top-1/2 right-10 w-16 h-16 border-2 border-white/25"
              style={{ 
                transform: 'rotateY(45deg) rotateX(30deg)',
-               animation: 'float 8s ease-in-out infinite reverse'
+               animation: 'float 8s ease-in-out infinite reverse',
+               boxShadow: '0 0 10px rgba(255, 255, 255, 0.1)'
              }}></div>
         
-        {/* 3D Grid pattern */}
-        <div className="absolute top-40 left-1/4 opacity-5">
+        {/* 3D Grid pattern - Enhanced */}
+        <div className="absolute top-40 left-1/4 opacity-15">
           <div className="grid grid-cols-3 grid-rows-3 gap-4">
             {Array.from({ length: 9 }).map((_, i) => (
               <div 
                 key={i}
-                className="w-3 h-3 border border-white/20"
+                className="w-3 h-3 border border-white/40"
                 style={{
                   animation: `float ${4 + i * 0.5}s ease-in-out infinite`,
                   animationDelay: `${i * 0.2}s`,
-                  transform: `rotateX(${i * 10}deg) rotateY(${i * 15}deg)`
+                  transform: `rotateX(${i * 10}deg) rotateY(${i * 15}deg)`,
+                  boxShadow: '0 0 5px rgba(255, 255, 255, 0.2)'
                 }}
               ></div>
             ))}
