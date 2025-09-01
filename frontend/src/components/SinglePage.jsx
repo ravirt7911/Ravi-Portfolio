@@ -175,10 +175,10 @@ const SinglePage = ({ data }) => {
           const force = (150 - distance) / 150;
           shape.x -= (dx / distance) * force * 1;
           shape.y -= (dy / distance) * force * 1;
-          shape.opacity = Math.min(0.3, shape.opacity + force * 0.1);
+          shape.opacity = Math.min(0.6, shape.opacity + force * 0.2); // Increased max opacity
           shape.rotationSpeed = Math.max(0.02, shape.rotationSpeed + force * 0.01);
         } else {
-          shape.opacity = Math.max(0.05, shape.opacity - 0.001);
+          shape.opacity = Math.max(0.15, shape.opacity - 0.001); // Increased min opacity
           shape.rotationSpeed = Math.max(0.005, shape.rotationSpeed - 0.0005);
         }
 
