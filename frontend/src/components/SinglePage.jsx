@@ -35,7 +35,7 @@ const SinglePage = ({ data }) => {
         speedX: (Math.random() - 0.5) * 0.5,
         speedY: (Math.random() - 0.5) * 0.5,
         speedZ: (Math.random() - 0.5) * 0.1,
-        opacity: Math.random() * 0.3 + 0.1,
+        opacity: Math.random() * 0.6 + 0.3, // Increased from 0.3 + 0.1
         pulse: Math.random() * Math.PI * 2,
         rotation: Math.random() * Math.PI * 2,
         rotationSpeed: (Math.random() - 0.5) * 0.02,
