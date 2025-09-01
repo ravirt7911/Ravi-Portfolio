@@ -204,8 +204,8 @@ const SinglePage = ({ data }) => {
             ctx.beginPath();
             ctx.moveTo(particles[i].x * perspective1, particles[i].y * perspective1);
             ctx.lineTo(particles[j].x * perspective2, particles[j].y * perspective2);
-            ctx.strokeStyle = `rgba(255, 255, 255, ${0.15 * (1 - distance3D / 120)})`;
-            ctx.lineWidth = 1;
+            ctx.strokeStyle = `rgba(255, 255, 255, ${0.3 * (1 - distance3D / 120)})`; // Increased from 0.15
+            ctx.lineWidth = 1.5; // Increased line width
             ctx.stroke();
           }
         }
