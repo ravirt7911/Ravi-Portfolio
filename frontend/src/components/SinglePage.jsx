@@ -54,7 +54,7 @@ const SinglePage = ({ data }) => {
         rotationY: Math.random() * Math.PI * 2,
         rotationSpeed: (Math.random() - 0.5) * 0.01,
         type: Math.floor(Math.random() * 4), // Different 3D shapes
-        opacity: Math.random() * 0.1 + 0.05,
+        opacity: Math.random() * 0.25 + 0.15, // Increased from 0.1 + 0.05
         pulse: Math.random() * Math.PI * 2,
         depth: Math.random() * 30 + 10,
       });
