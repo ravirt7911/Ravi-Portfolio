@@ -302,7 +302,7 @@ const SinglePage = ({ data }) => {
     <div className="h-screen overflow-hidden bg-black relative">
       <canvas
         ref={canvasRef}
-        className="absolute inset-0 pointer-events-none opacity-40"
+        className="absolute inset-0 pointer-events-none opacity-70"
         style={{ zIndex: 1 }}
       />
       
