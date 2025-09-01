@@ -22,51 +22,40 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-white/90 backdrop-blur-md border-b border-gray-100"
+          ? "bg-black/95 backdrop-blur-xl border-b border-white/10 shadow-2xl"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <div 
-            className="font-light text-xl cursor-pointer hover:scale-105 transition-transform duration-300"
+            className="font-light text-2xl cursor-pointer hover:scale-110 transition-all duration-500 transform hover:rotate-3 text-white"
             onClick={() => scrollToSection("hero")}
+            style={{
+              textShadow: '0 0 30px rgba(255,255,255,0.3)'
+            }}
           >
             RT
           </div>
           
           <div className="hidden md:flex items-center space-x-8">
-            <button
-              onClick={() => scrollToSection("about")}
-              className="text-sm font-normal hover:text-gray-600 transition-colors duration-300 hover:-translate-y-0.5 transform"
-            >
-              About
-            </button>
-            <button
-              onClick={() => scrollToSection("skills")}
-              className="text-sm font-normal hover:text-gray-600 transition-colors duration-300 hover:-translate-y-0.5 transform"
-            >
-              Skills
-            </button>
-            <button
-              onClick={() => scrollToSection("projects")}
-              className="text-sm font-normal hover:text-gray-600 transition-colors duration-300 hover:-translate-y-0.5 transform"
-            >
-              Projects
-            </button>
-            <button
-              onClick={() => scrollToSection("achievements")}
-              className="text-sm font-normal hover:text-gray-600 transition-colors duration-300 hover:-translate-y-0.5 transform"
-            >
-              Achievements
-            </button>
+            {["about", "skills", "projects", "achievements"].map((section) => (
+              <button
+                key={section}
+                onClick={() => scrollToSection(section)}
+                className="text-sm font-light text-white/80 hover:text-white transition-all duration-300 hover:-translate-y-1 transform capitalize relative group"
+              >
+                {section}
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-white transition-all duration-300 group-hover:w-full"></span>
+              </button>
+            ))}
           </div>
 
           <Button
             onClick={() => scrollToSection("contact")}
-            className="bg-black text-white hover:bg-gray-800 transition-all duration-300 hover:scale-105"
+            className="bg-white text-black hover:bg-gray-200 transition-all duration-500 hover:scale-110 hover:shadow-lg hover:shadow-white/20 transform"
             size="sm"
           >
             Contact
