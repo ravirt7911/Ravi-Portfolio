@@ -87,12 +87,12 @@ const SinglePage = ({ data }) => {
         ctx.rotate(shape.rotation);
         ctx.globalAlpha = shape.opacity * (1 + Math.sin(shape.pulse) * 0.3);
 
-        // Create 3D depth gradient
-        const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, shape.size);
-        gradient.addColorStop(0, `rgba(255, 255, 255, ${shape.opacity * 3})`);
-        gradient.addColorStop(0.3, `rgba(255, 255, 255, ${shape.opacity * 1.5})`);
-        gradient.addColorStop(0.7, `rgba(255, 255, 255, ${shape.opacity})`);
-        gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
+          // Create 3D depth gradient
+          const gradient = ctx.createRadialGradient(0, 0, 0, 0, 0, Math.max(1, shape.size));
+          gradient.addColorStop(0, `rgba(255, 255, 255, ${shape.opacity * 3})`);
+          gradient.addColorStop(0.3, `rgba(255, 255, 255, ${shape.opacity * 1.5})`);
+          gradient.addColorStop(0.7, `rgba(255, 255, 255, ${shape.opacity})`);
+          gradient.addColorStop(1, 'rgba(255, 255, 255, 0)');
 
         ctx.strokeStyle = gradient;
         ctx.lineWidth = 2;
