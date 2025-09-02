@@ -19,7 +19,7 @@ const Footer = () => {
           
           <div className="flex flex-col sm:flex-row items-center justify-center space-y-3 sm:space-y-0 sm:space-x-8">
             <a
-              href="mailto:ravir7911@gmail.com"
+              href="mailto:ravirt7911@gmail.com"
               className="text-white/50 hover:text-white/80 transition-colors duration-500 text-sm font-light"
               style={{ fontFamily: "'Inter', system-ui, sans-serif", fontWeight: "300" }}
             >
@@ -35,7 +35,7 @@ const Footer = () => {
               LinkedIn
             </a>
             <a
-              href="https://github.com/ravir7911"
+              href="https://github.com/ravirt7911"
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/50 hover:text-white/80 transition-colors duration-500 text-sm font-light"
