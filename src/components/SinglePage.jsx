@@ -26,7 +26,7 @@ const SinglePage = ({ data }) => {
     window.addEventListener("resize", resizeCanvas);
 
     // Create enhanced particles with 3D properties
-    for (let i = 0; i < 25; i++) {
+    for (let i = 0; i < 250; i++) {
       particles.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -43,7 +43,7 @@ const SinglePage = ({ data }) => {
     }
 
     // Create 3D geometric shapes
-    for (let i = 0; i < 8; i++) {
+    for (let i = 0; i < 15; i++) {
       geometryShapes.push({
         x: Math.random() * canvas.width,
         y: Math.random() * canvas.height,
@@ -351,71 +351,23 @@ const SinglePage = ({ data }) => {
       <div className="h-full flex flex-col relative z-10">
         
         {/* Enhanced 3D Header */}
-        <header className="flex items-center justify-between px-8 py-4 relative">
-          {/* 3D Header background effect - Enhanced */}
-          <div className="absolute inset-0 bg-gradient-to-r from-white/5 via-white/8 to-white/5 backdrop-blur-sm"></div>
-          
-          <div 
-            className="font-medium text-xl text-white tracking-wide relative z-10 cursor-pointer group"
-            style={{
-              fontFamily: "'Space Grotesk', system-ui, sans-serif",
-              fontWeight: "500",
-              textShadow: '0 0 20px rgba(255,255,255,0.3)'
-            }}
-            onMouseEnter={() => setHoveredElement('logo')}
-            onMouseLeave={() => setHoveredElement(null)}
-          >
-            <span className={`transition-all duration-500 ${hoveredElement === 'logo' ? 'transform scale-110 rotate-1' : ''}`}
-                  style={{
-                    transform: hoveredElement === 'logo' ? 'rotateY(10deg) rotateX(5deg)' : 'rotateY(0deg) rotateX(0deg)',
-                    display: 'inline-block',
-                    transformStyle: 'preserve-3d'
-                  }}>
-              Ravi Teeja K
-            </span>
-          </div>
-          
-          <div className="flex items-center space-x-6 relative z-10">
-            <Button
-              className="bg-white text-black hover:bg-gray-100 transition-all duration-500 text-sm font-medium tracking-wide px-6 py-2 relative overflow-hidden group"
-              onClick={() => window.open(`mailto:${data.contact.email}`, "_blank")}
-              style={{ 
-                fontFamily: "'Space Grotesk', system-ui, sans-serif", 
-                fontWeight: "500",
-                boxShadow: '0 10px 25px rgba(255,255,255,0.1)',
-                transform: 'translateZ(0)'
-              }}
-              onMouseEnter={() => setHoveredElement('contact-btn')}
-              onMouseLeave={() => setHoveredElement(null)}
-            >
-              {/* 3D button background effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-gray-100 to-white opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              <span className={`relative z-10 transition-all duration-300 ${hoveredElement === 'contact-btn' ? 'transform scale-105' : ''}`}
-                    style={{
-                      transform: hoveredElement === 'contact-btn' ? 'translateZ(10px)' : 'translateZ(0px)',
-                      transformStyle: 'preserve-3d'
-                    }}>
-                Contact
-              </span>
-            </Button>
-          </div>
-        </header>
+        
 
         {/* Enhanced 3D Main Content */}
-        <div className="flex-1 flex items-center">
-          <div className="w-full max-w-7xl mx-auto px-8">
-            <div className="grid lg:grid-cols-2 gap-20 items-center">
+        <div className="flex-1 flex items-center overflow-hidden">
+          <div className="w-full mx-20">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-20 items-start lg:items-center">
               
               {/* Left Side - Enhanced 3D Hero */}
-              <div className="space-y-8 relative">
+              <div className="space-y-6 md:space-y-8 relative w-full lg:w-auto min-w-0 lg:pr-8">
                 {/* 3D Background card */}
                 <div className="absolute inset-0 bg-gradient-to-br from-white/5 to-transparent rounded-3xl backdrop-blur-sm transform rotate-1 scale-105 opacity-50"></div>
                 <div className="absolute inset-0 bg-gradient-to-tl from-white/3 to-transparent rounded-3xl backdrop-blur-sm transform -rotate-1 scale-102 opacity-30"></div>
                 
-                <div className="relative z-10 space-y-6">
-                  <div className="space-y-4">
+                <div className="relative z-10 space-y-4 md:space-y-6">
+                  <div className="space-y-3 md:space-y-4">
                     <h1 
-                      className="text-5xl md:text-6xl font-bold tracking-tight leading-tight text-white relative group cursor-default"
+                      className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight text-white relative group cursor-default"
                       style={{
                         fontFamily: "'Space Grotesk', system-ui, sans-serif",
                         fontWeight: "700",
@@ -435,7 +387,7 @@ const SinglePage = ({ data }) => {
                         {data.hero.name}
                       </span>
                       {/* 3D text shadow effect */}
-                      <span className="absolute top-1 left-1 text-5xl md:text-6xl font-bold tracking-tight leading-tight opacity-20 -z-10"
+                      <span className="absolute top-1 left-1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tight leading-tight opacity-20 -z-10"
                             style={{
                               fontFamily: "'Space Grotesk', system-ui, sans-serif",
                               fontWeight: "700",
@@ -446,7 +398,7 @@ const SinglePage = ({ data }) => {
                     </h1>
                     
                     <p 
-                      className="text-xl font-medium text-white/90 leading-relaxed group cursor-default"
+                      className="text-lg md:text-xl font-medium text-white/90 leading-relaxed group cursor-default"
                       style={{
                         fontFamily: "'Manrope', system-ui, sans-serif",
                         fontWeight: "500"
@@ -466,7 +418,7 @@ const SinglePage = ({ data }) => {
                   </div>
                   
                   <p 
-                    className="text-base text-white/70 leading-relaxed"
+                    className="text-sm md:text-base text-white/70 leading-relaxed"
                     style={{
                       fontFamily: "'Manrope', system-ui, sans-serif",
                       fontWeight: "400",
@@ -477,9 +429,9 @@ const SinglePage = ({ data }) => {
                   </p>
                   
                   {/* Enhanced 3D Buttons */}
-                  <div className="flex items-center space-x-6 pt-6">
+                  <div className="flex flex-col sm:flex-row items-start sm:items-center space-y-4 sm:space-y-0 sm:space-x-6 pt-4 md:pt-6">
                     <Button
-                      className="bg-white text-black hover:bg-gray-100 transition-all duration-500 px-8 py-3 text-base font-medium tracking-wide relative overflow-hidden group"
+                      className="bg-white text-black hover:bg-gray-100 transition-all duration-500 px-6 md:px-8 py-2.5 md:py-3 text-sm md:text-base font-medium tracking-wide relative overflow-hidden group w-full sm:w-auto"
                       onClick={() => window.open(`mailto:${data.contact.email}`, "_blank")}
                       style={{ 
                         fontFamily: "'Space Grotesk', system-ui, sans-serif", 
@@ -505,7 +457,7 @@ const SinglePage = ({ data }) => {
                     
                     <Button
                       variant="outline"
-                      className="border-2 border-white/40 text-white hover:bg-white hover:text-black transition-all duration-500 px-8 py-3 text-base font-medium tracking-wide relative overflow-hidden group"
+                      className="border-2 border-white/40 text-white hover:bg-white hover:text-black transition-all duration-500 px-6 md:px-8 py-2.5 md:py-3 text-sm md:text-base font-medium tracking-wide relative overflow-hidden group w-full sm:w-auto"
                       onClick={() => window.open(data.contact.profiles.linkedin, "_blank")}
                       style={{ 
                         fontFamily: "'Space Grotesk', system-ui, sans-serif", 
@@ -531,18 +483,18 @@ const SinglePage = ({ data }) => {
               </div>
 
               {/* Right Side - Enhanced 3D About & Experience */}
-              <div className="space-y-10 relative">
+              <div className="space-y-8 md:space-y-10 relative w-full lg:w-auto min-w-0">
                 {/* 3D Background layers */}
                 <div className="absolute inset-0 bg-gradient-to-bl from-white/5 to-transparent rounded-3xl backdrop-blur-sm transform -rotate-1 scale-105 opacity-40"></div>
                 <div className="absolute inset-0 bg-gradient-to-tr from-white/3 to-transparent rounded-3xl backdrop-blur-sm transform rotate-1 scale-102 opacity-20"></div>
                 
-                <div className="relative z-10 space-y-8">
+                <div className="relative z-10 space-y-6 md:space-y-8">
                   {/* Enhanced 3D About Section */}
                   <div className="group cursor-default"
                        onMouseEnter={() => setHoveredElement('about')}
                        onMouseLeave={() => setHoveredElement(null)}>
                     <h2 
-                      className="text-3xl font-bold mb-5 tracking-tight text-white relative"
+                      className="text-2xl md:text-3xl font-bold mb-4 md:mb-5 tracking-tight text-white relative"
                       style={{
                         fontFamily: "'Space Grotesk', system-ui, sans-serif",
                         fontWeight: "600"
@@ -561,7 +513,7 @@ const SinglePage = ({ data }) => {
                     </h2>
                     
                     <p 
-                      className="text-sm text-white/80 leading-relaxed mb-5"
+                      className="text-sm md:text-base text-white/80 leading-relaxed mb-4 md:mb-5"
                       style={{
                         fontFamily: "'Manrope', system-ui, sans-serif",
                         fontWeight: "400",
@@ -571,46 +523,7 @@ const SinglePage = ({ data }) => {
                       Currently serving as Member of Technical Staff at Lyzr AI, architecting multi-agent systems and full-stack AI solutions for enterprise organizations including Under Armour, Tiny's Construction, and others.
                     </p>
                     
-                    {/* Enhanced 3D Focus Areas */}
-                    <div className="space-y-3">
-                      <h3 
-                        className="text-lg font-semibold text-white mb-3"
-                        style={{
-                          fontFamily: "'Space Grotesk', system-ui, sans-serif",
-                          fontWeight: "600"
-                        }}
-                      >
-                        Focus Areas
-                      </h3>
-                      <div className="space-y-2">
-                        {[
-                          "AI agent systems for enterprise automation",
-                          "Scalable full-stack applications",
-                          "Open-source contributions"
-                        ].map((item, index) => (
-                          <div key={index} className="flex items-start space-x-3 group cursor-default"
-                               onMouseEnter={() => setHoveredElement(`focus-${index}`)}
-                               onMouseLeave={() => setHoveredElement(null)}>
-                            <div className={`w-1.5 h-1.5 bg-white/50 rounded-full mt-2 flex-shrink-0 transition-all duration-300 ${hoveredElement === `focus-${index}` ? 'bg-white scale-150' : ''}`}
-                                 style={{
-                                   transform: hoveredElement === `focus-${index}` ? 'translateZ(3px)' : 'translateZ(0px)',
-                                   boxShadow: hoveredElement === `focus-${index}` ? '0 0 10px rgba(255,255,255,0.5)' : 'none'
-                                 }}></div>
-                            <p 
-                              className={`text-xs text-white/70 leading-relaxed transition-all duration-300 ${hoveredElement === `focus-${index}` ? 'text-white/90 transform' : ''}`}
-                              style={{
-                                fontFamily: "'Manrope', system-ui, sans-serif",
-                                fontWeight: "400",
-                                transform: hoveredElement === `focus-${index}` ? 'translateZ(2px) translateX(2px)' : 'translateZ(0px) translateX(0px)',
-                                transformStyle: 'preserve-3d'
-                              }}
-                            >
-                              {item}
-                            </p>
-                          </div>
-                        ))}
-                      </div>
-                    </div>
+                    
                   </div>
 
                   {/* Enhanced 3D Experience Section */}
@@ -618,7 +531,7 @@ const SinglePage = ({ data }) => {
                        onMouseEnter={() => setHoveredElement('experience')}
                        onMouseLeave={() => setHoveredElement(null)}>
                     <h3 
-                      className="text-xl font-bold mb-4 text-white relative"
+                      className="text-lg md:text-xl font-bold mb-4 text-white relative"
                       style={{
                         fontFamily: "'Space Grotesk', system-ui, sans-serif",
                         fontWeight: "600"
@@ -630,15 +543,15 @@ const SinglePage = ({ data }) => {
                               display: 'inline-block',
                               transformStyle: 'preserve-3d'
                             }}>
-                        Experience
+                        Professional Experience
                       </span>
-                      <div className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-white to-transparent transition-all duration-500 ${hoveredElement === 'experience' ? 'w-20' : 'w-10'}`}></div>
+                      <div className={`absolute -bottom-1 left-0 h-0.5 bg-gradient-to-r from-white to-transparent transition-all duration-500 ${hoveredElement === 'experience' ? 'w-32' : 'w-16'}`}></div>
                     </h3>
                     
-                    <div className="space-y-5">
-                      {data.about.experience.slice(0, 2).map((exp, index) => (
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4">
+                      {data.about.experience && data.about.experience.map((exp, index) => (
                         <div key={exp.id} 
-                             className="space-y-2 p-4 rounded-2xl bg-white/5 backdrop-blur-sm border border-white/10 group/exp cursor-default relative overflow-hidden"
+                             className="space-y-2 p-2.5 rounded-lg bg-white/5 backdrop-blur-sm border border-white/10 group/exp cursor-default relative overflow-hidden hover:bg-white/8 transition-all duration-300"
                              onMouseEnter={() => setHoveredElement(`exp-${index}`)}
                              onMouseLeave={() => setHoveredElement(null)}
                              style={{
@@ -650,9 +563,9 @@ const SinglePage = ({ data }) => {
                           {/* 3D hover background effect */}
                           <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent opacity-0 group-hover/exp:opacity-100 transition-opacity duration-500"></div>
                           
-                          <div className="relative z-10">
+                          <div className="relative z-10 space-y-1.5">
                             <h4 
-                              className="text-sm font-semibold text-white"
+                              className="text-xs font-semibold text-white leading-tight"
                               style={{
                                 fontFamily: "'Space Grotesk', system-ui, sans-serif",
                                 fontWeight: "600"
@@ -661,26 +574,47 @@ const SinglePage = ({ data }) => {
                               {exp.title}
                             </h4>
                             <p 
-                              className="text-sm text-white/80"
+                              className="text-xs text-white/80 font-medium"
                               style={{
                                 fontFamily: "'Manrope', system-ui, sans-serif",
                                 fontWeight: "500"
                               }}
                             >
-                              {exp.company} • {exp.duration}
+                              {exp.company}
                             </p>
+                            <div className="flex flex-col space-y-1 text-xs text-white/60">
+                              <span className="flex items-center space-x-2">
+                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"></path>
+                                </svg>
+                                <span>{exp.duration}</span>
+                              </span>
+                              <span className="flex items-center space-x-2">
+                                <svg className="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 0 1111.314 0z"></path>
+                                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                                <span>{exp.location}</span>
+                              </span>
+                            </div>
                           </div>
                           
-                          <p 
-                            className="text-xs text-white/70 leading-relaxed relative z-10"
-                            style={{
-                              fontFamily: "'Manrope', system-ui, sans-serif",
-                              fontWeight: "400",
-                              lineHeight: "1.5"
-                            }}
-                          >
-                            {exp.description[0]}
-                          </p>
+                          <div className="relative z-10 space-y-1.5">
+                            {exp.description && exp.description.map((item, idx) => (
+                              <p 
+                                key={idx}
+                                className="text-xs text-white/70 leading-relaxed flex items-start space-x-2"
+                                style={{
+                                  fontFamily: "'Manrope', system-ui, sans-serif",
+                                  fontWeight: "400",
+                                  lineHeight: "1.3"
+                                }}
+                              >
+                                <span className="w-1 h-1 bg-white/40 rounded-full mt-1.5 flex-shrink-0"></span>
+                                <span>{item}</span>
+                              </p>
+                            ))}
+                          </div>
                         </div>
                       ))}
                     </div>
@@ -699,9 +633,9 @@ const SinglePage = ({ data }) => {
           <div className="flex items-center justify-between relative z-10">
             <div className="flex items-center space-x-8">
               {[
-                { label: "Email", href: "mailto:ravir7911@gmail.com" },
+                { label: "Email", href: "mailto:ravirt7911@gmail.com" },
                 { label: "LinkedIn", href: "https://linkedin.com/in/kamsu-ravi-teeja" },
-                { label: "GitHub", href: "https://github.com/ravir7911" }
+                { label: "GitHub", href: "https://github.com/ravirt7911" }
               ].map((link, index) => (
                 <a
                   key={index}
