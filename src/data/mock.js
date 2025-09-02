@@ -12,7 +12,7 @@ export const mockData = {
         id: 1,
         title: "Member of Technical Staff (Full Stack, AI Agents)",
         company: "Lyzr AI",
-        duration: "June 2025 – Present",
+        duration: "June 2024 – Present",
         location: "Remote, India",
         description: [
           "Architected and built multi-agent systems and deployed full-stack AI Agents using AI Agent Studio",
@@ -25,7 +25,7 @@ export const mockData = {
         id: 2,
         title: "Founding Software Engineer",
         company: "GradeHive AI (Now Deepdocs)",
-        duration: "Aug 2024 – Jun 2025",
+        duration: "August 2024 – June 2025",
         location: "Remote",
         description: [
           "Led complete development of frontend and backend systems integrating LLMs for coding and grading tasks",
@@ -38,7 +38,7 @@ export const mockData = {
         id: 3,
         title: "Software Engineer Intern",
         company: "Tooljet",
-        duration: "May 2024 – Aug 2024",
+        duration: "May 2024 – August 2024",
         location: "Open Source Platform",
         description: [
           "Led complete revamp for Tooljet's workflows feature, transitioning from beta to production",
@@ -79,7 +79,7 @@ export const mockData = {
       title: "Web Based SQL Query Interface",
       description: "Web-based SQL query interface designed to accept user-inputted SQL queries and display corresponding data tables with predefined query results for demonstration.",
       tech: ["ReactJS", "NestJS"],
-      link: "https://github.com/ravir7911/sturdy-disco",
+      link: "https://github.com/ravirt7911/sturdy-disco",
       category: "Web Development"
     },
     {
@@ -154,16 +154,16 @@ export const mockData = {
   ],
 
   contact: {
-    email: "ravir7911@gmail.com",
+    email: "ravirt7911@gmail.com",
     phone: "+91 8919774630",
     linkedin: "linkedin.com/in/kamsu-ravi-teeja",
     location: "Remote, India",
     profiles: {
-      github: "https://github.com/ravir7911",
+      github: "https://github.com/ravirt7911",
       linkedin: "https://linkedin.com/in/kamsu-ravi-teeja",
-      codechef: "https://www.codechef.com/users/ravir7911",
-      leetcode: "https://leetcode.com/ravir7911",
-      codeforces: "https://codeforces.com/profile/ravir7911"
+      codechef: "https://www.codechef.com/users/ravirt7911",
+      leetcode: "https://leetcode.com/ravirt7911",
+      codeforces: "https://codeforces.com/profile/ravirt7911"
     }
   }
 };
