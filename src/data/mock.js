@@ -15,10 +15,10 @@ export const mockData = {
         duration: "June 2024 – Present",
         location: "Remote, India",
         description: [
-          "Architected and built multi-agent systems and deployed full-stack AI Agents using AI Agent Studio",
-          "Worked with enterprise organizations such as Under Armour, Tiny's Construction, Uniqus, Finpact, and Firstsource",
-          "Developed high-performance, responsive web applications using Next.js, TypeScript, TailwindCSS, and Python (FastAPI)",
-          "Integrated with databases like MongoDB and PostgreSQL, working with tools such as Zustand, Prisma, and tRPC"
+          "Built multi-agent systems and deployed AI Agents using AI Agent Studio",
+          "Worked with enterprise clients: Under Armour, Tiny's Construction, Uniqus, Finpact, Firstsource",
+          "Developed web applications using Next.js, TypeScript, TailwindCSS, Python (FastAPI)",
+          "Integrated MongoDB, PostgreSQL with Zustand, Prisma, and tRPC"
         ]
       },
       {
@@ -28,10 +28,10 @@ export const mockData = {
         duration: "August 2024 – June 2025",
         location: "Remote",
         description: [
-          "Led complete development of frontend and backend systems integrating LLMs for coding and grading tasks",
-          "Built features including automatic bulk assignment creation and auto grading using AI with rubrics",
-          "Developed support for 10+ coding languages with handwritten JPEGs, Docs & PDFs using OCR",
-          "Stack: ReactJS, NextJS, LLM, OpenAI, MongoDB, GitLab, AWS"
+          "Led frontend and backend development integrating LLMs for coding and grading",
+          "Built automatic assignment creation and AI-powered grading with rubrics",
+          "Supported 10+ coding languages with OCR for handwritten content",
+          "Tech: ReactJS, NextJS, LLM, OpenAI, MongoDB, GitLab, AWS"
         ]
       },
       {
@@ -41,9 +41,19 @@ export const mockData = {
         duration: "May 2024 – August 2024",
         location: "Open Source Platform",
         description: [
-          "Led complete revamp for Tooljet's workflows feature, transitioning from beta to production",
-          "Managed the transition while resolving production bugs and ensuring seamless functionality",
-          "Contributed to both frontend (ReactJS, Redux, TypeScript) and backend (Python, FastAPI)"
+          "Revamped Tooljet's workflows feature from beta to production",
+          "Resolved production bugs and ensured seamless functionality",
+          "Contributed to frontend (ReactJS, Redux, TypeScript) and backend (Python, FastAPI)"
+        ]
+      },
+      {
+        id: 4,
+        title: "Developer Intern,",
+        company: "Hoppscotch",
+        duration: "Aug 2023 – Nov 2023",
+        location: "Open Source Platform",
+        description: [
+          "Built the marketing website for Hoppscotch using React.js and Vue.js, and also Python for Backend & represented the organization’s DevRel expertise at conferences and events, solidifying the position as leaders in API Testing."
         ]
       }
     ]
