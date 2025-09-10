@@ -12,7 +12,7 @@ export const mockData = {
         id: 1,
         title: "Member of Technical Staff (Full Stack, AI Agents)",
         company: "Lyzr AI",
-        duration: "June 2024 – Present",
+        duration: "June 2025 – Present",
         location: "Remote, India",
         description: [
           "Built multi-agent systems and deployed AI Agents using AI Agent Studio",
