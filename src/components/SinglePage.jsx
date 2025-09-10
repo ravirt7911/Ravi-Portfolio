@@ -543,7 +543,7 @@ const SinglePage = ({ data }) => {
                      fontWeight: "600"
                       }}
                     >
-                      Failed Founder - Failure isn’t the end—it’s just the price I paid to get here . These days, I spend my time building cool AI stuff, chasing goals on the football field , getting lost in games where I get to be the hero , and binging movies (yeah, mostly TFI) . I live on late nights, big dreams, and that itch to always do something more. Life’s too short to play it safe—so I don’t.
+                      These days, I spend my time building cool AI stuff, chasing goals on the football field , getting lost in games where I get to be the hero , and binging movies (yeah, mostly TFI) . I live on late nights, big dreams, and that itch to always do something more. Life’s too short to play it safe—so I don’t.
                     </p>
                   </div>
                   <div className="group cursor-default"
@@ -573,18 +573,20 @@ const SinglePage = ({ data }) => {
                         <div className="w-2 h-2 bg-gradient-to-r from-white to-white/60 rounded-full mt-1.5 flex-shrink-0"></div>
                         <div className="flex-1">
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
-                            <h4 className="text-sm md:text-base font-semibold text-white/95" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
-                              Member of Technical Staff
+                            <h4 className="text-base md:text-lg font-bold text-white/95 mb-1" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
+                              Member of Technical Staff • <span className="text-sm md:text-base font-medium underline">
+                                <a 
+                                  href="https://www.lyzr.ai/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="hover:text-white transition-colors duration-200"
+                                >
+                                  Lyzr AI
+                                </a>
+                              </span>
                             </h4>
                             <p className="text-xs font-medium text-white/80" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
-                              <a 
-                                href="https://www.lyzr.ai/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="hover:text-white transition-colors duration-200 underline"
-                              >
-                                Lyzr AI
-                              </a> • June 2024 - Present
+                              June 2024 - Present
                             </p>
                           </div>
                           <p className="text-xs text-white/70 leading-relaxed" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
@@ -598,18 +600,20 @@ const SinglePage = ({ data }) => {
                         <div className="w-2 h-2 bg-gradient-to-r from-white/80 to-white/40 rounded-full mt-1.5 flex-shrink-0"></div>
                         <div className="flex-1">
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
-                            <h4 className="text-sm md:text-base font-semibold text-white/95" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
-                              Founding Software Engineer
+                            <h4 className="text-base md:text-lg font-bold text-white/95 mb-1" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
+                              Founding Software Engineer • <span className="text-sm md:text-base font-medium underline">
+                                <a 
+                                  href="https://deepdocs.dev/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="hover:text-white transition-colors duration-200"
+                                >
+                                  GradeHive AI
+                                </a>
+                              </span>
                             </h4>
                             <p className="text-xs font-medium text-white/80" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
-                              <a 
-                                href="https://deepdocs.dev/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="hover:text-white transition-colors duration-200 underline"
-                              >
-                                GradeHive AI
-                              </a> • Aug 2023 - June 2024
+                              Aug 2023 - June 2024
                             </p>
                           </div>
                           <p className="text-xs text-white/70 leading-relaxed" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
@@ -623,18 +627,20 @@ const SinglePage = ({ data }) => {
                         <div className="w-2 h-2 bg-gradient-to-r from-white/60 to-white/30 rounded-full mt-1.5 flex-shrink-0"></div>
                         <div className="flex-1">
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
-                            <h4 className="text-sm md:text-base font-semibold text-white/95" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
-                              Software Engineer Intern
+                            <h4 className="text-base md:text-lg font-bold text-white/95 mb-1" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
+                              Software Engineer Intern • <span className="text-sm md:text-base font-medium underline">
+                                <a 
+                                  href="https://www.tooljet.ai/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="hover:text-white transition-colors duration-200"
+                                >
+                                  Tooljet
+                                </a>
+                              </span>
                             </h4>
                             <p className="text-xs font-medium text-white/80" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
-                              <a 
-                                href="https://www.tooljet.ai/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="hover:text-white transition-colors duration-200 underline"
-                              >
-                                Tooljet
-                              </a> • May 2024 - Aug 2024
+                              May 2024 - Aug 2024
                             </p>
                           </div>
                           <p className="text-xs text-white/70 leading-relaxed" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
@@ -648,18 +654,20 @@ const SinglePage = ({ data }) => {
                         <div className="w-2 h-2 bg-gradient-to-r from-white/50 to-white/20 rounded-full mt-1.5 flex-shrink-0"></div>
                         <div className="flex-1">
                           <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-1">
-                            <h4 className="text-sm md:text-base font-semibold text-white/95" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
-                              Developer Intern
+                            <h4 className="text-base md:text-lg font-bold text-white/95 mb-1" style={{ fontFamily: "'Space Grotesk', system-ui, sans-serif" }}>
+                              Developer Intern • <span className="text-sm md:text-base font-medium underline">
+                                <a 
+                                  href="https://hoppscotch.com/" 
+                                  target="_blank" 
+                                  rel="noopener noreferrer"
+                                  className="hover:text-white transition-colors duration-200"
+                                >
+                                  Hoppscotch
+                                </a>
+                              </span>
                             </h4>
                             <p className="text-xs font-medium text-white/80" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
-                              <a 
-                                href="https://hoppscotch.com/" 
-                                target="_blank" 
-                                rel="noopener noreferrer"
-                                className="hover:text-white transition-colors duration-200 underline"
-                              >
-                                Hoppscotch
-                              </a> • Aug 2023 - Nov 2023
+                              Aug 2023 - Nov 2023
                             </p>
                           </div>
                           <p className="text-xs text-white/70 leading-relaxed" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>

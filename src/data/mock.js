@@ -1,7 +1,7 @@
 export const mockData = {
   hero: {
     name: "RAVI TEEJA K",
-    title: "Full Stack Developer & AI Engineer",
+    title: "Building Software & Multi Agent AI Systems",
     description: "Crafting intelligent solutions with cutting-edge technology. Specialized in building multi-agent AI systems, full-stack applications, and scalable enterprise solutions."
   },
   
