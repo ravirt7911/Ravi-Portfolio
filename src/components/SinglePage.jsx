@@ -586,7 +586,7 @@ const SinglePage = ({ data }) => {
                               </span>
                             </h4>
                             <p className="text-xs font-medium text-white/80" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
-                              June 2024 - Present
+                              June 2025 - Present
                             </p>
                           </div>
                           <p className="text-xs text-white/70 leading-relaxed" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
@@ -613,7 +613,7 @@ const SinglePage = ({ data }) => {
                               </span>
                             </h4>
                             <p className="text-xs font-medium text-white/80" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
-                              Aug 2023 - June 2024
+                              Aug 2024 - June 2025
                             </p>
                           </div>
                           <p className="text-xs text-white/70 leading-relaxed" style={{ fontFamily: "'Manrope', system-ui, sans-serif" }}>
