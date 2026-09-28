@@ -1,67 +1,98 @@
 export const mockData = {
   hero: {
     name: "RAVI TEEJA K",
-    title: "Building Software & Multi Agent AI Systems",
-    description: "Crafting intelligent solutions with cutting-edge technology. Specialized in building multi-agent AI systems, full-stack applications, and scalable enterprise solutions."
+    role: "Forward Deployed Engineer",
+    company: "Qdrant",
+    companyLink: "https://qdrant.tech/",
+    description: "I write code by day and night, play football and basketball in between, catch the odd Telugu movie, and never fully grew out of Power Rangers. Right now I help teams ship vector search and RAG systems that actually hold up in production."
   },
+
+  beyondCode: "These days I'm building cool AI stuff, chasing goals on the football field, and getting lost in games where I get to be the hero. I live on late nights, big dreams, and that itch to always do something more.",
   
   about: {
-    summary: "Currently serving as a Member of Technical Staff at Lyzr AI, where I architect and build multi-agent systems and deploy full-stack AI Agents using AI Agent Studio. I specialize in creating intelligent automation solutions for enterprise organizations including Under Armour, Tiny's Construction, Uniqus, Finpact, and Firstsource.",
+    summary: "Currently serving as a Forward Deployed Engineer at Qdrant, where I work directly with enterprise customers to design and deploy production vector search and RAG systems. Previously, I was an AI Engineer at Lyzr AI, where I architected and built multi-agent systems and full-stack AI Agents using AI Agent Studio for enterprise organizations including Under Armour, Tiny's Construction, Uniqus, Finpact, and Firstsource.",
     experience: [
       {
         id: 1,
-        title: "Member of Technical Staff (Full Stack, AI Agents)",
-        company: "Lyzr AI",
-        duration: "June 2025 – Present",
-        location: "Remote, India",
+        title: "Forward Deployed Engineer",
+        company: "Qdrant",
+        link: "https://qdrant.tech/",
+        ranger: "red",
+        current: true,
+        duration: "April 2026 – Present",
+        location: "Remote",
+        summary: "Embedding directly with enterprise customers to design and ship production vector search and RAG systems on Qdrant, turning real-world retrieval problems into scalable solutions.",
         description: [
-          "Built multi-agent systems and deployed AI Agents using AI Agent Studio",
-          "Worked with enterprise clients: Under Armour, Tiny's Construction, Uniqus, Finpact, Firstsource",
-          "Developed web applications using Next.js, TypeScript, TailwindCSS, Python (FastAPI)",
-          "Integrated MongoDB, PostgreSQL with Zustand, Prisma, and tRPC"
-        ]
+          "Translate real-world retrieval and search problems into robust, production-ready solutions",
+          "Work across hybrid search, indexing and scaling strategies for high-throughput workloads"
+        ],
+        tech: ["Qdrant", "Vector Search", "RAG", "Hybrid Search"]
       },
       {
         id: 2,
-        title: "Founding Software Engineer",
-        company: "GradeHive AI (Now Deepdocs)",
-        duration: "August 2024 – June 2025",
-        location: "Remote",
+        title: "AI Engineer",
+        company: "Lyzr AI",
+        link: "https://www.lyzr.ai/",
+        ranger: "blue",
+        duration: "June 2025 – March 2026",
+        location: "Remote, India",
+        summary: "Architected and shipped multi-agent systems and full-stack AI agents on AI Agent Studio, including LLM fine-tuning for custom workflows and automation.",
         description: [
-          "Led frontend and backend development integrating LLMs for coding and grading",
-          "Built automatic assignment creation and AI-powered grading with rubrics",
-          "Supported 10+ coding languages with OCR for handwritten content",
-          "Tech: ReactJS, NextJS, LLM, OpenAI, MongoDB, GitLab, AWS"
-        ]
+          "Designed tailored agent systems for Under Armour, Tiny's Construction, Uniqus, Finpact and Firstsource",
+          "Built fast, responsive web apps and the APIs behind complex agent logic"
+        ],
+        tech: ["Next.js", "TypeScript", "FastAPI", "tRPC", "Prisma", "MongoDB", "PostgreSQL"]
       },
       {
         id: 3,
-        title: "Software Engineer Intern",
-        company: "Tooljet",
-        duration: "May 2024 – August 2024",
-        location: "Open Source Platform",
+        title: "Founding Software Engineer",
+        company: "GradeHive AI (Now Deepdocs)",
+        link: "https://deepdocs.dev/",
+        ranger: "green",
+        duration: "August 2024 – June 2025",
+        location: "Remote",
+        summary: "Led the frontend and backend of an LLM-powered grading platform where educators set their own rubrics. The product later pivoted to Deepdocs.",
         description: [
-          "Revamped Tooljet's workflows feature from beta to production",
-          "Resolved production bugs and ensured seamless functionality",
-          "Contributed to frontend (ReactJS, Redux, TypeScript) and backend (Python, FastAPI)"
-        ]
+          "Bulk assignment creation and AI auto-grading across 10+ languages, handwritten JPEGs, docs and PDFs via OCR",
+          "Graded code, written, image and Jupyter notebook tests, with the AI explaining why each answer earned its score"
+        ],
+        tech: ["React", "Next.js", "OpenAI", "MongoDB", "AWS"]
       },
       {
         id: 4,
-        title: "Developer Intern,",
+        title: "Software Engineer Intern",
+        company: "Tooljet",
+        link: "https://www.tooljet.ai/",
+        ranger: "white",
+        duration: "May 2024 – August 2024",
+        location: "Open Source Platform",
+        summary: "Led the revamp of Workflows, the backbone of the Tooljet platform, and took it from beta to production while fixing critical production issues.",
+        description: [
+          "The upgrade was pivotal in landing two major enterprise customers",
+          "Turned customer feature requests into proofs of concept, shipped them, and fixed open-source issues"
+        ],
+        tech: ["React", "Redux", "TypeScript", "ReactFlow", "Python", "FastAPI"]
+      },
+      {
+        id: 5,
+        title: "Developer Intern",
         company: "Hoppscotch",
+        link: "https://hoppscotch.com/",
+        ranger: "black",
         duration: "Aug 2023 – Nov 2023",
         location: "Open Source Platform",
+        summary: "Built the marketing website for Hoppscotch, the open-source API testing platform.",
         description: [
-          "Built the marketing website for Hoppscotch using React.js and Vue.js, and also Python for Backend & represented the organization’s DevRel expertise at conferences and events, solidifying the position as leaders in API Testing."
-        ]
+          "Represented Hoppscotch's DevRel at conferences and events in the API testing space"
+        ],
+        tech: ["React", "Vue.js", "Python"]
       }
     ]
   },
 
   skills: {
     languages: ["Python", "JavaScript", "TypeScript", "SQL"],
-    ai: ["AI agents", "LLM APIs", "Langchain", "MCP (Model Context Protocol)"],
+    ai: ["Vector Search", "Qdrant", "RAG", "AI agents", "LLM APIs", "Langchain", "MCP (Model Context Protocol)"],
     frameworks: ["ReactJS", "Redux", "VueJS", "NextJS", "NodeJS", "ExpressJS", "FastAPI", "Flask"],
     databases: ["Firebase", "Supabase", "MongoDB", "RDBMS (MySQL, PostgreSQL, SQLite)"],
     tools: ["Data Structures & Algorithms", "REST", "Linux", "Git & GitHub", "Kafka", "OpenAI API", "Gemini API", "Machine Learning & Deep Learning Frameworks"]

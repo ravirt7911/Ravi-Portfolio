@@ -51,7 +51,22 @@ module.exports = {
         'responsive-3xl': 'clamp(1.875rem, 7vw, 3rem)',
         'responsive-4xl': 'clamp(2.25rem, 8vw, 4rem)',
       },
+      fontFamily: {
+        display: ['"Bebas Neue"', 'Impact', 'sans-serif'],
+        heading: ['"Space Grotesk"', 'system-ui', 'sans-serif'],
+        sans: ['Manrope', 'system-ui', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+      },
   		colors: {
+        ranger: 'rgb(var(--ranger) / <alpha-value>)',
+        ink: {
+          DEFAULT: 'rgb(var(--ink) / <alpha-value>)',
+          2: 'rgb(var(--ink-2) / <alpha-value>)',
+          3: 'rgb(var(--ink-3) / <alpha-value>)',
+        },
+        cream: 'rgb(var(--cream) / <alpha-value>)',
+        haze: 'rgb(var(--haze) / <alpha-value>)',
+        line: 'rgb(var(--line) / <alpha-value>)',
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',
   			card: {

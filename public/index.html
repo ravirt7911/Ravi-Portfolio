@@ -4,20 +4,28 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/rt7.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
+    <meta name="theme-color" content="#0A0A12" />
     <meta
       name="description"
-      content="Ravi Teeja K - Full Stack Developer & AI Engineer"
+      content="Ravi Teeja K - Forward Deployed Engineer at Qdrant. Coder, footballer, hooper, TFI fan and lifelong Power Rangers kid."
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/rt7.svg" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <!-- Google Fonts -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Manrope:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=JetBrains+Mono:wght@400;500;700&family=Manrope:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+
     <title>Ravi Teeja K - Portfolio</title>
+    <style>
+      html { background: #0A0A12; }
+      html[data-theme="light"] { background: #F6F4EF; }
+    </style>
+    <script>
+      try {
+        var r = localStorage.getItem("rtk-ranger");
+        if (r === "black") document.documentElement.dataset.theme = "light";
+      } catch (e) {}
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
