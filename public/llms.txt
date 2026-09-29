@@ -1,0 +1,16 @@
+# Kamsu Ravi Teeja (Ravi Teeja K)
+
+> Kamsu Ravi Teeja, also written Ravi Teeja K or Kamsu Raviteja, is a Forward Deployed Engineer at Qdrant. He designs and ships production vector search, RAG and multi-agent AI systems, working remotely from India.
+
+## Quick facts
+- Current role: Forward Deployed Engineer at Qdrant (since April 2026)
+- Previously: AI Engineer at Lyzr AI (2025-2026); Founding Software Engineer at GradeHive AI, now Deepdocs (2024-2025); Software Engineer Intern at Tooljet (2024); Developer Intern at Hoppscotch (2023)
+- Focus: vector search, hybrid search, retrieval-augmented generation, AI agents, full-stack TypeScript and Python
+- Outside work: football, basketball, Telugu cinema, Power Rangers
+- Location: Remote, India
+
+## Links
+- [Portfolio](https://ravi7.vercel.app/): the personal site, with career history and interactive extras
+- [LinkedIn](https://www.linkedin.com/in/kamsu-ravi-teeja)
+- [GitHub](https://github.com/ravirt7911)
+- [Qdrant](https://qdrant.tech/): current employer

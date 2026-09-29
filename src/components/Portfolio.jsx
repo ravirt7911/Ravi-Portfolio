@@ -1,18 +1,12 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { mockData as data } from "../data/mock";
-import { MorphOverlay, RangerProvider } from "./Ranger";
+import { MorphOverlay, RangerProvider, prefersReducedMotion } from "./Ranger";
 import Hero from "./sections/Hero";
 import Saga from "./sections/Saga";
 import OffDuty from "./sections/OffDuty";
 import Contact from "./sections/Contact";
 
-const shouldPlayIntro = () => {
-  try {
-    return !window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-  } catch {
-    return true;
-  }
-};
+const shouldPlayIntro = () => !prefersReducedMotion();
 
 const useScrollReveal = () => {
   useEffect(() => {

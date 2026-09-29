@@ -85,11 +85,10 @@ const Hero = ({ data }) => {
           </p>
 
           <h1 className="mt-4 font-display leading-[0.85] tracking-wide">
+            <span className="sr-only">Kamsu </span>
             <span className="block text-[clamp(3.5rem,10vw,7rem)] text-cream">{first}</span>
             <span className="relative block text-[clamp(2.75rem,7.5vw,5rem)]">
-              <span aria-hidden="true" className="text-outline absolute left-1 top-1 select-none">
-                {rest.join(" ")}
-              </span>
+              <span aria-hidden="true" data-text={rest.join(" ")} className="text-outline absolute left-1 top-1 select-none" />
               <span className="relative text-ranger">{rest.join(" ")}</span>
             </span>
           </h1>
